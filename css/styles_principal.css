@@ -1,7 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+}
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9E7B85; /* Color del menú */
+    padding: 15px 60px; /* Ajusta el padding según el espacio necesario */
+}
 
+.logo h1 {
+    font-family: 'Lilita One', cursive; /* Fuente Lilita One */
+    color: #F5D1DB;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
 
+.nav-groups {
+    display: flex;
+    gap: 15em; /* Espacio entre los dos grupos de enlaces */
+}
+
+.nav-group {
+    list-style: none;
+    display: flex;
+    gap: 5em; /* Espacio entre los enlaces dentro de cada grupo */
+}
+
+.nav-group li {
+    margin: 0;
+}
+
+.nav-group a {
+    text-decoration: none;
+    color: #F5D1DB;
+    font-weight: 500;
+    font-size: 18px; /* Tamaño de los enlaces */
+}
+
+.nav-group a:hover {
+    color: #F2B2C4;
+}
+
+/* Separador entre Log in y Sign in */
+.nav-group li:last-child {
+    margin-left: 10px; /* Ajustar la distancia entre Log in y Sign in si es necesario */
+}
 
 /* FOOTER */
 #footer{
