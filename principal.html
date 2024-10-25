@@ -30,30 +30,51 @@
 </head>
 <body>
     
-    <nav class="navbar">
-        <div class="logo">
-            <h1>DRIZZLE</h1>
-        </div>
-        <div class="nav-groups">
-            <!-- Primer grupo de enlaces -->
-            <ul class="nav-group">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Order</a></li>
-                <li><a href="#">Locations</a></li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- Cambiamos la tipografía de DRIZZLE -->
+          <a class="navbar-brand" href="#" style="font-family: 'Lilita One', cursive; font-size: 28px; letter-spacing: 3px; color: #F5D1DB; padding-left: 0.5em;">DRIZZLE</a>
+      
+          <!-- Botón del menú para móviles -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Elementos del menú -->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav me-auto" style="font-family: 'Poppins', sans-serif; font-size: 18px; color: #F5D1DB;">
+              <!-- Enlaces centrados -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Order</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Location</a>
+              </li>
             </ul>
-            
-            <!-- Segundo grupo de enlaces -->
-            <ul class="nav-group">
-                <li><a href="#">Log in</a></li>
-                <li><a href="#">Sign in</a></li>
+      
+            <!-- Separador para espacio adicional entre los grupos -->
+            <div style="width: 1em;"></div>
+      
+            <!-- Enlaces a la derecha (Log in y Sign in) -->
+            <ul class="navbar-nav ms-auto" style="font-family: 'Poppins', sans-serif; font-size: 18px; color: #F5D1DB; padding-right: 0.5em;">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log in</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">|</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign in</a>
+              </li>
             </ul>
+          </div>
         </div>
-    </nav>
-
-
-
-
-
+      </nav>
 
     <footer id="footer">
         <!-- línea horzontal -->

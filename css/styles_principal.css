@@ -6,53 +6,47 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
+
+/* MENÚ */
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #9E7B85; /* Color del menú */
-    padding: 15px 60px; /* Ajusta el padding según el espacio necesario */
+    padding: 1em 3em; /* Ajusta el padding para espacio arriba y abajo */
+
 }
 
-.logo h1 {
-    font-family: 'Lilita One', cursive; /* Fuente Lilita One */
+.navbar-brand {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+.navbar-nav.me-auto {
+    margin-left: 20em;
+}
+
+.navbar-nav.me-auto .nav-item:not(:last-child) {
+    margin-right: 6em; /* Aumenta este valor para controlar el espacio entre los enlaces */
+}
+
+.navbar a {
     color: #F5D1DB;
-    font-size: 28px;
-    letter-spacing: 3px;
 }
 
-.nav-groups {
-    display: flex;
-    gap: 15em; /* Espacio entre los dos grupos de enlaces */
+
+.navbar-toggler:hover {
+    background-color: #D6A7B0; /* Cambia el color de fondo al pasar el mouse */
+    border-color: #7E5D63; /* Cambia el color del borde al pasar el mouse */
+    border: 1px solid #9E7B85; /* Cambia el color del borde del botón */
+    padding: 0;
 }
 
-.nav-group {
-    list-style: none;
-    display: flex;
-    gap: 5em; /* Espacio entre los enlaces dentro de cada grupo */
-}
+/* PRIMERA SECCIÓN */
 
-.nav-group li {
-    margin: 0;
-}
 
-.nav-group a {
-    text-decoration: none;
-    color: #F5D1DB;
-    font-weight: 500;
-    font-size: 18px; /* Tamaño de los enlaces */
-}
-
-.nav-group a:hover {
-    color: #F2B2C4;
-}
-
-/* Separador entre Log in y Sign in */
-.nav-group li:last-child {
-    margin-left: 10px; /* Ajustar la distancia entre Log in y Sign in si es necesario */
-}
 
 /* FOOTER */
 #footer{
