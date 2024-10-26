@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
         <!-- CSS -->
-        <link href="css/styles_principal.css" rel="stylesheet" type="text/css">
+        <link href="css/styles_donut.css" rel="stylesheet" type="text/css">
 
         <!-- LIBRERÍAS GITHUB -->
 
@@ -28,46 +28,69 @@
     <title>DRIZZLE DONUTS</title>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" style="font-size: 1.5em; color: #F5D1DB;" href="#">DRIZZEL</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" style="color: #F5D1DB;" aria-current="page" href="#">Home</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" style="color: #F5D1DB;" aria-current="page" href="#">Order</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link active" style="color: #F5D1DB;" aria-current="page" href="#">Location</a>
-              </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Account
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sign in</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Log in</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
     
+  <div id="product">
+    <div class="column-donut-foto">
+      <img src="media/photo/donuts/fresa.png">
+    </div>
+    <div class="column-donut">
+      <div class="row-donut-title">
+        <h1>Pink Paradise</h1>
+      </div>
+      <div class="row-donut">
+        <h2>A strawberry-flavored donut with a smooth, glossy pink glaze, topped with colorful candy sprinkles.</h2>
+      </div>
+      <div class="row-donut">
+        <button class="btn-order">Order now</button>
+        <img src="media/photo/fav1.png" alt="Imagen con cambio" id="toggle-img" onclick="changeImage()">
+      </div>
+      <div class="row-donut">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-
-
+  <div class="ondas">
+    <img src="media/photo/ondas.png">
+  </div>
+    
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          INGREDIENTS
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <h4 class="accordion-body">PAll-purpose flour (bleached wheat flour, malted barley flour, niacin, iron, thiamine mononitrate, riboflavin, folic acid), butter (pasteurized cream, salt), sugar, milk, eggs, yeast, vegetable oil (palm and/or canola), strawberry glaze (sugar, corn syrup, water, natural flavors, citric acid, artificial color [red 40]), colored sprinkles (sugar, corn starch, palm oil, natural and artificial colors, soy lecithin), salt, natural vanilla extract, baking powder, water.</h4>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          ALLERGY INFORMATION
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <h4 class="accordion-body"><strong>Contains: Milk, Wheat, Egg, Soy</strong>
+        <br>
+        Our donuts are made onsite and may come into contact with different allergens during production. Please be advised that any of our products may contain allergens including peanuts, tree nuts, milk, eggs, wheat, soy, and sesame.
+        <br>
+        For additional nutritional information, please visit <strong>www.drizzledonuts.com/nutrition</strong>.
+        <br>
+        2,000 calories a day is used for general nutrition advice, but calorie needs may vary.
+        <br>
+        *Calorie counts are per serving. Serving size varies based on product.
+      </h4>
+      </div>
+    </div>
+  </div>
 
 
 
