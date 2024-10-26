@@ -1,4 +1,41 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D6A7B0;
+}
+
+/* MENÚ */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9E7B85; /* Color del menú */
+    padding: 1em 3em; /* Ajusta el padding para espacio arriba y abajo */
+
+}
+
+.navbar-brand {
+    color: #D6A7B0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    font-family: 'Lilita One', sans-serif;
+    padding-left: 1.5em;
+    font-size: 18px
+}
+
+.navbar-nav.me-auto {
+    margin-left: 20em;
+}
+
+.navbar-nav.me-auto .nav-item:not(:last-child) {
+    margin-right: 6em; /* Aumenta este valor para controlar el espacio entre los enlaces */
+}
 
 
 

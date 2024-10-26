@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    background-color: #D6A7B0;
 }
 
 /* MENÚ */
@@ -21,7 +21,11 @@ body {
 }
 
 .navbar-brand {
+    color: #D6A7B0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    font-family: 'Lilita One', sans-serif;
+    padding-left: 1.5em;
+    font-size: 18px
 }
 
 .navbar-nav.me-auto {
@@ -32,20 +36,28 @@ body {
     margin-right: 6em; /* Aumenta este valor para controlar el espacio entre los enlaces */
 }
 
-.navbar a {
-    color: #F5D1DB;
-}
 
-
-.navbar-toggler:hover {
-    background-color: #D6A7B0; /* Cambia el color de fondo al pasar el mouse */
-    border-color: #7E5D63; /* Cambia el color del borde al pasar el mouse */
-    border: 1px solid #9E7B85; /* Cambia el color del borde del botón */
-    padding: 0;
-}
 
 /* PRIMERA SECCIÓN */
 
+
+.two-images-section {
+    background-color: #F4ACB7; /* Color de fondo */
+}
+
+.two-images-section .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.two-images-section .col-md-6 {
+    padding: 0; /* Elimina el padding de las columnas */
+}
+
+.two-images-section img {
+    width: 100%;  /* La imagen ocupa todo el ancho de su columna */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
 
 
 /* FOOTER */

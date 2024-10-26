@@ -30,51 +30,58 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <!-- Cambiamos la tipografía de DRIZZLE -->
-          <a class="navbar-brand" href="#" style="font-family: 'Lilita One', cursive; font-size: 28px; letter-spacing: 3px; color: #F5D1DB; padding-left: 0.5em;">DRIZZLE</a>
-      
-          <!-- Botón del menú para móviles -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" style="font-size: 1.5em; color: #F5D1DB;" href="#">DRIZZEL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-      
-          <!-- Elementos del menú -->
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav me-auto" style="font-family: 'Poppins', sans-serif; font-size: 18px; color: #F5D1DB;">
-              <!-- Enlaces centrados -->
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Order</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Location</a>
-              </li>
-            </ul>
-      
-            <!-- Separador para espacio adicional entre los grupos -->
-            <div style="width: 1em;"></div>
-      
-            <!-- Enlaces a la derecha (Log in y Sign in) -->
-            <ul class="navbar-nav ms-auto" style="font-family: 'Poppins', sans-serif; font-size: 18px; color: #F5D1DB; padding-right: 0.5em;">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Log in</a>
+                <a class="nav-link active" style="color: #F5D1DB;" aria-current="page" href="#">Home</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#">|</a>
+                <a class="nav-link active" style="color: #F5D1DB;" aria-current="page" href="#">Order</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" style="color: #F5D1DB;" aria-current="page" href="#">Location</a>
               </li>
               
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sign in</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sign in</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Log in</a></li>
+                </ul>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+
+      <section class="two-images-section py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Imagen 1 -->
+            <div class="col-md-6 text-center">
+              <img src="media/photo/LOGO-DRIZZLE.png" alt="Imagen 1" class="img-fluid">
+            </div>
+      
+            <!-- Imagen 2 -->
+            <div class="col-md-6 text-center">
+              <img src="media/photo/DALL·E 2024-09-27 17.33.23 - A hyper-realistic image of a stack of four different filled donuts without holes (berlinas), floating one on top of the other. Each donut should have .webp" alt="Imagen 2" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+
 
     <footer id="footer">
         <!-- línea horzontal -->
