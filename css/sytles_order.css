@@ -37,6 +37,44 @@ body {
     margin-right: 6em; /* Aumenta este valor para controlar el espacio entre los enlaces */
 }
 
+/* Cambia el color de los enlaces al pasar el ratón */
+.navbar .nav-link:hover {
+  color: #F5D1DB !important; /* Cambia a tu color preferido */
+  transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+/* Cambia el color del enlace activo también */
+.navbar .nav-link.active:hover {
+  color: #0000008C !important; /* Cambia a tu color preferido */
+}
+
+/* Estilo del menú desplegable */
+.navbar .dropdown-menu {
+  background-color: #F4ACB7; /* Color de fondo */
+  border: 2px solid #9D8189;
+  border-radius: 8px; /* Borde redondeado */
+  box-shadow: 1em 1em 1em #4e3f43; /* Sombra */
+}
+
+/* Estilo de cada elemento del menú */
+.navbar .dropdown-menu .dropdown-item {
+  color: #0000008C; /* Color de texto */
+  padding: 0.5em 1.5em; /* Espaciado interno */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición para el hover */
+}
+
+/* Hover para los elementos del menú */
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #FF85A2; /* Color de fondo al pasar el ratón */
+  color: #fff; /* Color del texto al pasar el ratón */
+}
+
+/* Separador del menú */
+.navbar .dropdown-menu .dropdown-divider {
+  border-color: #FFB6C1; /* Color del separador */
+}
+
+
 
 /* BOTONES */
 /* Estilos de la sección */
