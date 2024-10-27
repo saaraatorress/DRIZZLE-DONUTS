@@ -167,18 +167,11 @@ body {
 
 
 /* INGREDIENTES Y ALERGIAS */
-.accordion {
-    width: 60%;            
-    margin: 0 auto;  
-    border: 3px solid #EF7F98;
-    border-radius: 30px;
+
+.button.accordion-button.collapsed{
+color: #EF7F98;
+background-color: #FFCAD4;
 }
-
-/* .accordion-container{
-background-color:#FBE5E9 ;
-} */
-
-
 
 /* FOOTER  */
 .line {
