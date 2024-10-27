@@ -40,26 +40,299 @@ body {
 
 /* PRIMERA SECCIÓN */
 
-
-.two-images-section {
-    background-color: #F4ACB7; /* Color de fondo */
+/* Eliminar márgenes y padding del body */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.two-images-section .no-gutters {
-    margin-right: 0;
-    margin-left: 0;
+/* Ajustar la sección de donuts */
+.donut-section {
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+    background-color: #fbe6e8;
 }
 
-.two-images-section .col-md-6 {
-    padding: 0; /* Elimina el padding de las columnas */
+/* Contenedor del texto */
+.donut-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    background-color: #f8bfc9; /* Color de fondo igual al fondo de la imagen de los donuts */
+    padding: 0;
 }
 
-.two-images-section img {
-    width: 100%;  /* La imagen ocupa todo el ancho de su columna */
-    height: auto; /* Mantiene la proporción de la imagen */
+/* Imagen del texto */
+.donut-text img {
+    max-width: 90%;
+    height: auto;
+    margin-top: 2em;
+}
+
+/* Estilo del botón de "Order now" */
+.order-button {
+    padding: 0.5em 1.5em;
+    background-color: #7a4d46;
+    color: #fff;
+    border: none;
+    border-radius: 2em;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.order-button:hover {
+    background-color: #bf7b5c; /* Cambia el color de fondo al hacer hover */
+    color: #f5cbd3; /* Cambia el color del texto en el hover */
 }
 
 
+
+/* Contenedor de la imagen de los donuts */
+.donut-image {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0em;
+    background-color: #fbe6e8;
+    padding-right: 0em;
+}
+
+
+/* Imagen de los donuts */
+.donut-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*SEGUNDA SECCION */
+/*DONUT DE FRESA */
+
+  /* Estilo para el título de la sección */
+  .section-title {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #9D8189;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 1em;
+}
+  
+  /* Contenedor para imagen y texto alineados horizontalmente */
+  .info-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio entre la imagen y el texto */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3em;
+    position: relative;
+  }
+  
+  /* Imagen a la izquierda */
+  .info-image {
+    width: 30%;
+    position: relative;
+    z-index: 2; /* Coloca el donut por encima del recuadro */
+  }
+  
+  /* Título y descripción */
+  .info-heading {
+    font-size: 2.5em;
+    color: #000000; /* Color del título */
+    margin: 0;
+    font-family:'Lilita One', sans-serif ;
+    text-align: right;
+    position: relative;
+    z-index: 2; /* Coloca el título por encima del recuadro */
+  }
+  
+  .info-description {
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+  }
+
+  .info-section {
+    position: relative; /* Necesario para el pseudo-elemento */
+    padding: 2rem 5%; /* Mantén tu padding existente */
+    text-align: center;
+    background-color: #fbe6e8; /* Color de fondo de la sección */
+}
+
+/* Hover content */
+.hover-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 55%;
+    background-color: #F07F98; /* Color rosado sólido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: 2em;
+    margin-top: 5.5em;
+    margin-left: 5em;
+}
+
+.info-content:hover .hover-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar el texto al hacer hover */
+.info-content:hover .info-description {
+    opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+/* Botones en hover */
+.buttons {
+    display: flex;
+    gap: 1em;
+    border: #000000;
+    margin-top: 2em;
+    padding-top: 3em;
+    margin-left: auto; /* Empuja los botones hacia la derecha */
+    padding-right: 2em; /* Espacio adicional para separarlos del borde derecho */
+}
+
+.learn-more, .order-now {
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.learn-more:hover, .order-now:hover {
+    background-color: #F5ACBC;
+    color: #000000;
+}
+
+/*DONUT DE CHOCOLATE */
+
+.section-title2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #9D8189;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 1em;
+}
+  
+  /* Contenedor para imagen y texto alineados horizontalmente */
+  .info-content2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio entre la imagen y el texto */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3em;
+    position: relative;
+    background-color:#fbe6e8;
+    flex-direction: row-reverse;
+
+
+  }
+  
+  /* Imagen a la izquierda */
+  .info-image2 {
+    width: 30%;
+    position: relative;
+    z-index: 2; /* Coloca el donut por encima del recuadro */
+  }
+  
+  /* Título y descripción */
+  .info-heading2 {
+    font-size: 2.5em;
+    color: #000000; /* Color del título */
+    margin: 0;
+    font-family:'Lilita One', sans-serif ;
+    text-align: left;
+    position: relative;
+    z-index: 2; /* Coloca el título por encima del recuadro */
+  }
+  
+  .info-description2 {
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+  }
+
+
+/* Hover content */
+.hover-content2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 95%;
+    height: 55%;
+    background-color: #BF7B5C; /* Color rosado sólido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: 2em;
+    margin-top: 5.5em;
+    margin-right: 5em;
+}
+
+.info-content2:hover .hover-content2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar el texto al hacer hover */
+.info-content2:hover .info-description2 {
+    opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+/* Botones en hover */
+.buttons2 {
+    display: flex;
+    gap: 1em;
+    border: #000000;
+    margin-top: 2em;
+    padding-top: 3em;
+    margin-right: auto; /* Empuja los botones hacia la derecha */
+    padding-left: 2em; /* Espacio adicional para separarlos del borde derecho */
+}
+
+.learn-more2, .order-now2 {
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.learn-more2:hover, .order-now2:hover {
+    background-color: #D5A995;
+    color: #000000;
+}
+ 
 /* FOOTER */
 .line {
     height: 2px;
