@@ -38,6 +38,74 @@ body {
 }
 
 
+/* BOTONES */
+/* Estilos de la sección */
+.custom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4em 9em;
+    background-color: #FBE5E9;
+}
+
+/* Estilo del título */
+.section-title {
+    font-size: 3em;
+    margin-bottom: 1.5em;
+    color: #000000;
+    font-family: 'Lilita One', sans-serif ;
+}
+
+/* Contenedor de botones */
+.button-container {
+    display: flex;
+    gap: 2em;
+}
+
+/* Estilo de cada botón */
+.custom-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    width: 100%; /* Ancho fijo del botón */
+    height: auto; /* Alto fijo del botón */
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Sombra y efecto al pasar el mouse */
+.custom-button {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-button:hover {
+    transform: scale(1.05); /* Agranda el botón un 5% */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el mouse */
+}
+
+/* Estilo de la imagen dentro del botón */
+.custom-button img {
+    width: 100%; /* Tamaño reducido de la imagen */
+    height: auto; /* Tamaño reducido de la imagen */
+    margin-bottom: 0.5em;
+}
+
+/* Estilo del texto dentro del botón */
+.button-text {
+    font-size: 1.5em;
+    color: #000000;
+    margin-top: 0.3em;
+    text-align: center;
+    font-family: 'Lilita One', sans-serif;
+}
 
 /* FOOTER  */
 .line {

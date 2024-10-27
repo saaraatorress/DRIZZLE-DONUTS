@@ -333,6 +333,894 @@ body, html {
     color: #000000;
 }
  
+/* GALLETA */
+ /* Estilo para el título de la sección */
+ .section-title3 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #9D8189;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 1em;
+}
+  
+  /* Contenedor para imagen y texto alineados horizontalmente */
+  .info-content3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio entre la imagen y el texto */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3em;
+    position: relative;
+  }
+  
+  /* Imagen a la izquierda */
+  .info-image3 {
+    width: 30%;
+    position: relative;
+    z-index: 2; /* Coloca el donut por encima del recuadro */
+  }
+  
+  /* Título y descripción */
+  .info-heading3 {
+    font-size: 2.5em;
+    color: #000000; /* Color del título */
+    margin: 0;
+    font-family:'Lilita One', sans-serif ;
+    text-align: right;
+    position: relative;
+    z-index: 2; /* Coloca el título por encima del recuadro */
+  }
+  
+  .info-description3 {
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+  }
+
+  .info-section3 {
+    position: relative; /* Necesario para el pseudo-elemento */
+    padding: 2rem 5%; /* Mantén tu padding existente */
+    text-align: center;
+    background-color: #fbe6e8; /* Color de fondo de la sección */
+}
+
+/* Hover content */
+.hover-content3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 55%;
+    background-color: #F6D7A5; /* Color rosado sólido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: 2em;
+    margin-top: 5.5em;
+    margin-left: 5em;
+}
+
+.info-content3:hover .hover-content3 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar el texto al hacer hover */
+.info-content3:hover .info-description3 {
+    opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+/* Botones en hover */
+.buttons3 {
+    display: flex;
+    gap: 1em;
+    border: #000000;
+    margin-top: 2em;
+    padding-top: 3em;
+    margin-left: auto; /* Empuja los botones hacia la derecha */
+    padding-right: 2em; /* Espacio adicional para separarlos del borde derecho */
+}
+
+.learn-more3, .order-now3 {
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.learn-more3:hover, .order-now3:hover {
+    background-color: #F9E5C4;
+    color: #000000;
+}
+
+ /* CARAMELO */
+
+.section-title4 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #9D8189;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 1em;
+}
+  
+  /* Contenedor para imagen y texto alineados horizontalmente */
+  .info-content4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio entre la imagen y el texto */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3em;
+    position: relative;
+    background-color:#fbe6e8;
+    flex-direction: row-reverse;
+
+
+  }
+  
+  /* Imagen a la izquierda */
+  .info-image4 {
+    width: 30%;
+    position: relative;
+    z-index: 2; /* Coloca el donut por encima del recuadro */
+  }
+  
+  /* Título y descripción */
+  .info-heading4 {
+    font-size: 2.5em;
+    color: #000000; /* Color del título */
+    margin: 0;
+    font-family:'Lilita One', sans-serif ;
+    text-align: left;
+    position: relative;
+    z-index: 2; /* Coloca el título por encima del recuadro */
+  }
+  
+  .info-description4 {
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+  }
+
+
+/* Hover content */
+.hover-content4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 95%;
+    height: 55%;
+    background-color: #BD5E16; /* Color rosado sólido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: 2em;
+    margin-top: 5.5em;
+    margin-right: 5em;
+}
+
+.info-content4:hover .hover-content4 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar el texto al hacer hover */
+.info-content4:hover .info-description4 {
+    opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+/* Botones en hover */
+.buttons4 {
+    display: flex;
+    gap: 1em;
+    border: #000000;
+    margin-top: 2em;
+    padding-top: 3em;
+    margin-right: auto; /* Empuja los botones hacia la derecha */
+    padding-left: 2em; /* Espacio adicional para separarlos del borde derecho */
+}
+
+.learn-more4, .order-now4 {
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.learn-more4:hover, .order-now4:hover {
+    background-color: #D49668;
+    color: #000000;
+}
+
+/* PISTACHO */
+ /* Estilo para el título de la sección */
+ .section-title5 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #9D8189;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 1em;
+}
+  
+  /* Contenedor para imagen y texto alineados horizontalmente */
+  .info-content5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio entre la imagen y el texto */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3em;
+    position: relative;
+  }
+  
+  /* Imagen a la izquierda */
+  .info-image5 {
+    width: 30%;
+    position: relative;
+    z-index: 2; /* Coloca el donut por encima del recuadro */
+  }
+  
+  /* Título y descripción */
+  .info-heading5 {
+    font-size: 2.5em;
+    color: #000000; /* Color del título */
+    margin: 0;
+    font-family:'Lilita One', sans-serif ;
+    text-align: right;
+    position: relative;
+    z-index: 2; /* Coloca el título por encima del recuadro */
+  }
+  
+  .info-description5 {
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+  }
+
+  .info-section5 {
+    position: relative; /* Necesario para el pseudo-elemento */
+    padding: 2rem 5%; /* Mantén tu padding existente */
+    text-align: center;
+    background-color: #fbe6e8; /* Color de fondo de la sección */
+}
+
+/* Hover content */
+.hover-content5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 55%;
+    background-color: #A2981C; /* Color rosado sólido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: 2em;
+    margin-top: 5.5em;
+    margin-left: 5em;
+}
+
+.info-content5:hover .hover-content5 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar el texto al hacer hover */
+.info-content5:hover .info-description5 {
+    opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+/* Botones en hover */
+.buttons5 {
+    display: flex;
+    gap: 1em;
+    border: #000000;
+    margin-top: 2em;
+    padding-top: 3em;
+    margin-left: auto; /* Empuja los botones hacia la derecha */
+    padding-right: 2em; /* Espacio adicional para separarlos del borde derecho */
+}
+
+.learn-more5, .order-now5 {
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.learn-more5:hover, .order-now5:hover {
+    background-color: #C3BC6B;
+    color: #000000;
+}
+
+ /* ALGODÓN DE AZÚCAR */
+
+ .section-title6 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #9D8189;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 1em;
+}
+  
+  /* Contenedor para imagen y texto alineados horizontalmente */
+  .info-content6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio entre la imagen y el texto */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3em;
+    position: relative;
+    background-color:#fbe6e8;
+    flex-direction: row-reverse;
+
+
+  }
+  
+  /* Imagen a la izquierda */
+  .info-image6 {
+    width: 30%;
+    position: relative;
+    z-index: 2; /* Coloca el donut por encima del recuadro */
+  }
+  
+  /* Título y descripción */
+  .info-heading6 {
+    font-size: 2.5em;
+    color: #000000; /* Color del título */
+    margin: 0;
+    font-family:'Lilita One', sans-serif ;
+    text-align: left;
+    position: relative;
+    z-index: 2; /* Coloca el título por encima del recuadro */
+  }
+  
+  .info-description6 {
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+  }
+
+
+/* Hover content */
+.hover-content6 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 95%;
+    height: 55%;
+    background-color: #F8B5BF; /* Color rosado sólido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: 2em;
+    margin-top: 5.5em;
+    margin-right: 5em;
+}
+
+.info-content6:hover .hover-content6 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar el texto al hacer hover */
+.info-content6:hover .info-description6 {
+    opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+/* Botones en hover */
+.buttons6 {
+    display: flex;
+    gap: 1em;
+    border: #000000;
+    margin-top: 2em;
+    padding-top: 3em;
+    margin-right: auto; /* Empuja los botones hacia la derecha */
+    padding-left: 2em; /* Espacio adicional para separarlos del borde derecho */
+}
+
+.learn-more6, .order-now6 {
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.learn-more6:hover, .order-now6:hover {
+    background-color: #FACFD5;
+    color: #000000;
+}
+
+/* NARANJA */
+ /* Estilo para el título de la sección */
+ .section-title7 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #9D8189;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 1em;
+}
+  
+  /* Contenedor para imagen y texto alineados horizontalmente */
+  .info-content7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio entre la imagen y el texto */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3em;
+    position: relative;
+  }
+  
+  /* Imagen a la izquierda */
+  .info-image7 {
+    width: 30%;
+    position: relative;
+    z-index: 2; /* Coloca el donut por encima del recuadro */
+  }
+  
+  /* Título y descripción */
+  .info-heading7 {
+    font-size: 2.5em;
+    color: #000000; /* Color del título */
+    margin: 0;
+    font-family:'Lilita One', sans-serif ;
+    text-align: right;
+    position: relative;
+    z-index: 2; /* Coloca el título por encima del recuadro */
+  }
+  
+  .info-description7 {
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+  }
+
+  .info-section7 {
+    position: relative; /* Necesario para el pseudo-elemento */
+    padding: 2rem 5%; /* Mantén tu padding existente */
+    text-align: center;
+    background-color: #fbe6e8; /* Color de fondo de la sección */
+}
+
+/* Hover content */
+.hover-content7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 55%;
+    background-color: #DC7101; /* Color rosado sólido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: 2em;
+    margin-top: 5.5em;
+    margin-left: 5em;
+}
+
+.info-content7:hover .hover-content7 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar el texto al hacer hover */
+.info-content7:hover .info-description7 {
+    opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+/* Botones en hover */
+.buttons7 {
+    display: flex;
+    gap: 1em;
+    border: #000000;
+    margin-top: 2em;
+    padding-top: 3em;
+    margin-left: auto; /* Empuja los botones hacia la derecha */
+    padding-right: 2em; /* Espacio adicional para separarlos del borde derecho */
+}
+
+.learn-more7, .order-now7 {
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.learn-more7:hover, .order-now7:hover {
+    background-color: #E8A35A;
+    color: #000000;
+}
+
+ /* LIMÓN */
+
+ .section-title8 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #9D8189;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 1em;
+}
+  
+  /* Contenedor para imagen y texto alineados horizontalmente */
+  .info-content8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio entre la imagen y el texto */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3em;
+    position: relative;
+    background-color:#fbe6e8;
+    flex-direction: row-reverse;
+
+
+  }
+  
+  /* Imagen a la izquierda */
+  .info-image8 {
+    width: 30%;
+    position: relative;
+    z-index: 2; /* Coloca el donut por encima del recuadro */
+  }
+  
+  /* Título y descripción */
+  .info-heading8 {
+    font-size: 2.5em;
+    color: #000000; /* Color del título */
+    margin: 0;
+    font-family:'Lilita One', sans-serif ;
+    text-align: left;
+    position: relative;
+    z-index: 2; /* Coloca el título por encima del recuadro */
+  }
+  
+  .info-description8 {
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+  }
+
+
+/* Hover content */
+.hover-content8 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 95%;
+    height: 55%;
+    background-color: #EDD62F; /* Color rosado sólido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: 2em;
+    margin-top: 5.5em;
+    margin-right: 5em;
+}
+
+.info-content8:hover .hover-content8 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar el texto al hacer hover */
+.info-content8:hover .info-description8 {
+    opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+/* Botones en hover */
+.buttons8 {
+    display: flex;
+    gap: 1em;
+    border: #000000;
+    margin-top: 2em;
+    padding-top: 3em;
+    margin-right: auto; /* Empuja los botones hacia la derecha */
+    padding-left: 2em; /* Espacio adicional para separarlos del borde derecho */
+}
+
+.learn-more8, .order-now8 {
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.learn-more8:hover, .order-now8:hover {
+    background-color: #F3E478;
+    color: #000000;
+}
+
+/* FRUTOS ROJOS */
+ /* Estilo para el título de la sección */
+ .section-title9 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #9D8189;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 1em;
+}
+  
+  /* Contenedor para imagen y texto alineados horizontalmente */
+  .info-content9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio entre la imagen y el texto */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3em;
+    position: relative;
+  }
+  
+  /* Imagen a la izquierda */
+  .info-image9 {
+    width: 30%;
+    position: relative;
+    z-index: 2; /* Coloca el donut por encima del recuadro */
+  }
+  
+  /* Título y descripción */
+  .info-heading9 {
+    font-size: 2.5em;
+    color: #000000; /* Color del título */
+    margin: 0;
+    font-family:'Lilita One', sans-serif ;
+    text-align: right;
+    position: relative;
+    z-index: 2; /* Coloca el título por encima del recuadro */
+  }
+  
+  .info-description9 {
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+  }
+
+  .info-section9 {
+    position: relative; /* Necesario para el pseudo-elemento */
+    padding: 2rem 5%; /* Mantén tu padding existente */
+    text-align: center;
+    background-color: #fbe6e8; /* Color de fondo de la sección */
+}
+
+/* Hover content */
+.hover-content9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 55%;
+    background-color: #7C97B3; /* Color rosado sólido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: 2em;
+    margin-top: 5.5em;
+    margin-left: 5em;
+}
+
+.info-content9:hover .hover-content9 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar el texto al hacer hover */
+.info-content9:hover .info-description9 {
+    opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+/* Botones en hover */
+.buttons9 {
+    display: flex;
+    gap: 1em;
+    border: #000000;
+    margin-top: 2em;
+    padding-top: 3em;
+    margin-left: auto; /* Empuja los botones hacia la derecha */
+    padding-right: 2em; /* Espacio adicional para separarlos del borde derecho */
+}
+
+.learn-more9, .order-now9 {
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.learn-more9:hover, .order-now9:hover {
+    background-color: #AABBCE;
+    color: #000000;
+}
+
+ /* LOTUS */
+
+ .section-title10 {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #9D8189;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 1em;
+}
+  
+  /* Contenedor para imagen y texto alineados horizontalmente */
+  .info-content10 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Espacio entre la imagen y el texto */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3em;
+    position: relative;
+    background-color:#fbe6e8;
+    flex-direction: row-reverse;
+
+
+  }
+  
+  /* Imagen a la izquierda */
+  .info-image10 {
+    width: 30%;
+    position: relative;
+    z-index: 2; /* Coloca el donut por encima del recuadro */
+  }
+  
+  /* Título y descripción */
+  .info-heading10 {
+    font-size: 2.5em;
+    color: #000000; /* Color del título */
+    margin: 0;
+    font-family:'Lilita One', sans-serif ;
+    text-align: left;
+    position: relative;
+    z-index: 2; /* Coloca el título por encima del recuadro */
+  }
+  
+  .info-description10 {
+    font-size: 1em;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 2em;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+  }
+
+
+/* Hover content */
+.hover-content10 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 95%;
+    height: 55%;
+    background-color: #DDB280; /* Color rosado sólido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    margin: 2em;
+    margin-top: 5.5em;
+    margin-right: 5em;
+}
+
+.info-content10:hover .hover-content10 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Ocultar el texto al hacer hover */
+.info-content10:hover .info-description10 {
+    opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+/* Botones en hover */
+.buttons10 {
+    display: flex;
+    gap: 1em;
+    border: #000000;
+    margin-top: 2em;
+    padding-top: 3em;
+    margin-right: auto; /* Empuja los botones hacia la derecha */
+    padding-left: 2em; /* Espacio adicional para separarlos del borde derecho */
+}
+
+.learn-more10, .order-now10 {
+    padding: 0.25em 1em;
+    border-radius: 2em;
+    background-color: transparent;
+    color: #000000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.learn-more10:hover, .order-now10:hover {
+    background-color: #E9CDAC;
+    color: #000000;
+}
+
 /* FOOTER */
 .line {
     height: 2px;
