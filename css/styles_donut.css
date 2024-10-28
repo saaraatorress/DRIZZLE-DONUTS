@@ -80,25 +80,15 @@ body {
     font-size: 0.7em !important;
 }
 
-/* Quita el color azul al estar en foco */
-.accordion-button:focus {
-    box-shadow: none !important; /* Elimina el contorno azul */
-    color: #EF7F98 !important; /* Mantiene el color del texto */
-    background-color: #FFCAD4 !important; /* Color de fondo cuando está en foco */
-    border-color: #EF7F98 !important; /* Color del borde en foco */
-}
-
-/* Color de la flecha (icono de despliegue) */
+/* Cambiar el color del icono de despliegue (flecha) */
 .accordion-button::after {
-    filter: hue-rotate(280deg) !important; /* Cambia el color del icono */
-    color: #EF7F98;
+    color: #EF7F98 !important; /* Cambia directamente el color del icono */
+    filter: none; /* Elimina cualquier filtro de color aplicado */
 }
 
-/* Personalización del estado activo (cuando está expandido) */
-.accordion-button:not(.collapsed) {
-    color: #EF7F98 !important; /* Color de texto cuando está expandido */
-    background-color: #FFC1D1 !important; /* Color de fondo cuando está expandido */
-    border-color: #EF7F98 !important; /* Borde cuando está expandido */
+/* Asegúrate de que el estado del botón no colisione */
+.accordion-button:not(.collapsed)::after {
+    color: #EF7F98 !important; /* Asegúrate de que se aplique también cuando está expandido */
 }
 
 /* sponsor */

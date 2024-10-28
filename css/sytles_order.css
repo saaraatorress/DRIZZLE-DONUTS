@@ -84,6 +84,7 @@ body {
     align-items: center;
     text-align: center;
     padding: 4em 9em;
+   padding-bottom: 9em;
     background-color: #FBE5E9;
 }
 
@@ -146,6 +147,43 @@ body {
     text-align: center;
     font-family: 'Lilita One', sans-serif;
 }
+
+/* sponsor */
+
+/* Contenedor principal */
+.sponsor-marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: #9D8189; /* Fondo opcional */
+    padding: 1em 0;
+  }
+  
+  /* Pista de elementos con animación */
+  .sponsor-track {
+    display: inline-flex;
+    animation: scroll 60s linear infinite;
+    padding-bottom: 1em;
+  }
+  
+  /* Elementos individuales de texto */
+  .sponsor-item {
+    display: inline-block;
+    margin: 0 2em; /* Espacio entre textos */
+    font-size: 1.2em;
+    color: #FBE5E9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    font-family: 'Lilita One', sans-serif;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Animación continua */
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); } /* Se desplaza hasta la mitad del contenedor duplicado */
+  }
+  
 
 /* FOOTER  */
 .line {
