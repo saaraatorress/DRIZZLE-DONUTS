@@ -28,35 +28,148 @@
     <title>DRIZZLE DONUTS</title>
 </head>
 <body>
-    <section id="logo">
-        <img src="media/photo/LOGO-DRIZZLE.png">
-    </section>
-   
-    <section id="flecha">
-        <i class="fa-solid fa-chevron-left"></i>
-    </section>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" style="font-size: 1.5em; color: #F5D1DB;" href="#">DRIZZEL</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" style="color: #F5D1DB;" aria-current="page" href="#">Home</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link active" style="color: #F5D1DB;" aria-current="page" href="#">Order</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link active" style="color: #F5D1DB;" aria-current="page" href="#">Location</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sign in</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Log in</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        
 
     <section id="log-in">
         <div class="formulario">
-            <h2 class="title-login">LOG IN</h2>
-            <form class="form-login">
-                <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"></label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 0.8em; padding: 1.3em; border: 2px solid #F07F98; border-radius: 25px;">
-                </div>
-                <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"></label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 0.8em; padding: 1.3em; border: 2px solid #F07F98; border-radius: 25px;">
-                </div>
-                <button type="log in" class="btn btn-primary">LOG IN</button>
-            </form>
+    <!-- Título LOG IN centrado con borde y estilo personalizado -->
+    <h2 class="title-login">LOG IN</h2>
+    <form class="form-login">
+        <div class="mb-1"> <!-- Reduce el margen inferior del campo Username -->
+            <label for="exampleInputEmail1" class="form-label"></label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 0.8em; padding: 1em; border-radius: 5em; background-color: #FFCAD4; color: #9D8189;">
         </div>
+        <div class="mt-1"> <!-- Agrega un margen superior pequeño en el campo Password -->
+            <label for="exampleInputPassword1" class="form-label"></label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 0.8em; padding: 1em; border-radius: 5rem; background-color: #FFCAD4;  color: #9D8189;">
+        </div>
+        <button type="submit" class="btn btn-primary" style="border-radius: 5em;">LOG IN</button>
+
+        <div class="img-below-button">
+            <img src="media/photo/LOGO-DRIZZLE.png" alt="Icon" class="small-icon">
+        </div>
+
+    </form>
+</div>
+
 
         <div class="img-login">
             <img src="media/photo/log-in.png">
         </div>
     
     </section>
+
+      <div class="sponsor-marquee">
+    <div class="sponsor-track">
+      <!-- Repetimos el contenido de los elementos para lograr continuidad -->
+      <div class="sponsor-item">FOR THOSE WHO BELIEVE THAT LIFE'S SWEETEST MOMENTS ARE FOUND IN THE SIMPLEST TREATS.</div>
+      <div class="sponsor-item">FOR THOSE WHO BELIEVE THAT LIFE'S SWEETEST MOMENTS ARE FOUND IN THE SIMPLEST TREATS.</div>
+      <div class="sponsor-item">FOR THOSE WHO BELIEVE THAT LIFE'S SWEETEST MOMENTS ARE FOUND IN THE SIMPLEST TREATS.</div>
+      <div class="sponsor-item">FOR THOSE WHO BELIEVE THAT LIFE'S SWEETEST MOMENTS ARE FOUND IN THE SIMPLEST TREATS.</div>
+      <div class="sponsor-item">FOR THOSE WHO BELIEVE THAT LIFE'S SWEETEST MOMENTS ARE FOUND IN THE SIMPLEST TREATS.</div>
+      <div class="sponsor-item">FOR THOSE WHO BELIEVE THAT LIFE'S SWEETEST MOMENTS ARE FOUND IN THE SIMPLEST TREATS.</div>
+      <div class="sponsor-item">FOR THOSE WHO BELIEVE THAT LIFE'S SWEETEST MOMENTS ARE FOUND IN THE SIMPLEST TREATS.</div>
+      <div class="sponsor-item">FOR THOSE WHO BELIEVE THAT LIFE'S SWEETEST MOMENTS ARE FOUND IN THE SIMPLEST TREATS.</div>
+      <div class="sponsor-item">FOR THOSE WHO BELIEVE THAT LIFE'S SWEETEST MOMENTS ARE FOUND IN THE SIMPLEST TREATS.</div>
+      <div class="sponsor-item">FOR THOSE WHO BELIEVE THAT LIFE'S SWEETEST MOMENTS ARE FOUND IN THE SIMPLEST TREATS.</div>
+  </div>
+  
+  
+
+    <footer id="footer">
+        <!-- línea horzontal -->
+        <div class="line"></div>
+
+        <div class="text-footer">
+          <div class="column">
+            <h3 class="bold">Company</h3>
+          </div>
+          <div class="column">
+            <h3>Order</h3>
+          </div>
+          <div class="column">
+            <h3>Our story</h3>
+          </div>
+          <div class="column">
+            <h3>Rewards</h3>
+          </div>
+          <div class="column">
+            <h3>Nutrition & Allergy</h3>
+          </div>
+          <div class="column">
+            <h3>Support</h3>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <div class="column-sm">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="column-sm">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="column-sm">
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+          <div class="column-sm">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="column-sm">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <div class="column-sm">
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+        </div>
+
+        <div class="privacy-policy">
+          <div class="row-policy" align="center">
+            <img src="media/photo/LOGO-DRIZZLE.png" class="logo-img" width="400em" height="auto">
+          </div>
+          <div class="row-policy">
+            <h3 class="bold">© 2024 all rights reserved</h3>
+          </div>
+          <div class="row-policy">
+            <h3>Privacy policy | Terms and Conditions | Non-edible Cookie Preferences</h3>
+          </div>
+        </div>
+        
+    </footer>
 
 
 
