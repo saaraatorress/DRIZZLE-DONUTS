@@ -1,0 +1,68 @@
+
+#logo{
+    display: flex;
+    justify-content: center;
+    background-color: #DDB280;
+}
+
+#logo > img{
+    width: 8%;
+    height: auto;
+    justify-content: center;
+}
+
+/* formulario  */
+
+#log-in{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FBE5E9;
+    padding: 0 5em 0 5em;
+}
+
+.img-login{
+    display: flex;
+    justify-content: flex-end;
+}
+.img-login > img{
+    width: 95%;
+    height: auto;
+}
+
+.title-login{
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #9D8189;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.form-login{
+    width: 100%;
+    height: auto;
+}
+
+.formulario{
+    width: 60%;
+    background-color: #F4ACB7;
+    padding: 1em 4em 8em 4em;
+    box-shadow:  1em 1em 1em #9D8189;
+    border: 0.3em solid #9D8189;
+    border-radius: 30px;
+    margin: 4em;
+}
+
+
+#flecha{
+    background-color: #FBE5E9;
+}
+
+#flecha > i{
+    color: #F07F98 ;
+    font-size: 1.6em;
+    padding: 1em 0 0 6%;
+}
+
+
