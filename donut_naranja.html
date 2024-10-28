@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- TIPOGRAFIA (GOOGLE FONTS)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- títulos  -->
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+        <!-- textos (solo se usa la "light" y "bold")-->
+        <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!-- FONTAWSOME (ICONOS)-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!-- CSS -->
+        <link href="css/styles_donut_naranja.css" rel="stylesheet" type="text/css">
+
+        <!-- LIBRERÍAS GITHUB -->
+
+
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    <title>DRIZZLE DONUTS</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="font-size: 1.5em; color: #F5D1DB;" href="#">DRIZZEL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" style="color: #F5D1DB;" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" style="color: #F5D1DB;" aria-current="page" href="#">Order</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" style="color: #F5D1DB;" aria-current="page" href="#">Location</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Account
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Sign in</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Log in</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+  <section id="product">
+    <div class="column-donut-foto">
+      <img src="media/photo/donuts/fresa.png">
+    </div>
+    <div class="column-donut">
+      <div class="row-donut-title">
+        <h1>Pink Paradise</h1>
+      </div>
+      <div class="row-donut">
+        <h2>A strawberry-flavored donut with a smooth, glossy pink glaze, topped with colorful candy sprinkles.</h2>
+      </div>
+      <div class="row-donut">
+        <button class="btn-order">Order now</button>
+        <img src="media/photo/fav1.png" alt="Imagen con cambio" id="toggle-img" onclick="changeImage()">
+      </div>
+      <div class="row-donut">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ondas">
+    <img src="media/photo/ondas.png">
+  </div>
+    
+  <section class="accordion" id="accordionExample1" style="background-color: #fbe5e9; padding: 4em 10em;">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #EF7F98; background-color: #FFCAD4; font-family: 'Lilita One', sans-serif; font-size: 0.7em;">
+          INGREDIENTS
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample1" style="background: border-box;">
+        <div class="accordion-body" style="padding: 2em; font-family:'Poppins', sans-serif; font-size: 0.9em; font-weight: 400;">
+          All-purpose flour (bleached wheat flour, malted barley flour, niacin, iron, thiamine mononitrate, riboflavin, folic acid), butter (pasteurized cream, salt), sugar, milk, eggs, yeast, vegetable oil (palm and/or canola), strawberry glaze (sugar, corn syrup, water, natural flavors, citric acid, artificial color [red 40]), colored sprinkles (sugar, corn starch, palm oil, natural and artificial colors, soy lecithin), salt, natural vanilla extract, baking powder, water.
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="accordion" id="accordionExample2" style="background-color: #fbe5e9; padding: 4em 10em; padding-top: 0em;">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: #EF7F98; background-color: #FFCAD4; font-family: 'Lilita One', sans-serif; font-size: 0.7em;">
+          ALLERGY INFORMATION
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2" style="background: border-box;">
+        <div class="accordion-body" style="padding: 2em; font-family:'Poppins', sans-serif; font-size: 0.9em; font-weight: 400;">
+          <strong>Contains: Milk, wheat, egg, soy</strong><br><br>Our donuts are made onsite and may come into contact with different allergens during production. Please be advised that any of our products may contain allergens including peanuts, tree nuts, milk, eggs, wheat, soy, and sesame. <br><br>For additional nutritional information, please visit <strong> www.drizzledonuts.com/nutrition</strong>.<br><br> 2,000 calories a day is used for general nutrition advice, but calorie needs may vary. <br><br>*Calorie counts are per serving. Serving size varies based on product.
+        </div>
+      </div>
+    </div>
+</section>
+
+<section id="reviews"> 
+  <h2 class="section-title">TOP REVIEWS</h2>
+  <div class="cards">
+    <div class="card" style="width: 18rem; border: 2.5px solid #9D8189;">
+      <div class="card-body">
+        <i class="fa-solid fa-quote-left" style="color: #ff7797; font-size: 2em; padding-bottom: 0.5em;"></i>
+        <p class="card-text" style="font-family:'Poppins', sans-serif; font-size: 1em; font-weight: 400;">Light, fluffy and absolutely delicious! This donut is a must-try for anyone who loves a classic treat!</p>
+        <h5 class="card-subtitle mb-2 text-body-secondary" style="font-family:'Poppins', sans-serif; font-size: 0.8em; font-weight: bold;">- Jessica R.</h5>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; border: 2.5px solid #9D8189;">
+      <div class="card-body">
+        <i class="fa-solid fa-quote-left" style="color: #ff7797; font-size: 2em; padding-bottom: 0.5em;"></i>
+        <p class="card-text" style="font-family:'Poppins', sans-serif; font-size: 1em; font-weight: 400;">The perfect balance of sweetness and texture. I dream about these donuts every single day!</p>
+        <h5 class="card-subtitle mb-2 text-body-secondary" style="font-family:'Poppins', sans-serif; font-size: 0.8em; font-weight: bold;">- Dave L.</h5>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; border: 2.5px solid #9D8189;">
+      <div class="card-body">
+        <i class="fa-solid fa-quote-left" style="color: #ff7797; font-size: 2em; padding-bottom: 0.5em;"></i>
+        <p class="card-text" style="font-family:'Poppins', sans-serif; font-size: 1em; font-weight: 400;">My favorite donut in the whole world! I need it to come back - I miss it more than words can say!</p>
+        <h5 class="card-subtitle mb-2 text-body-secondary" style="font-family:'Poppins', sans-serif; font-size: 0.8em; font-weight: bold;">- Mark T.</h5>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; border: 2.5px solid #9D8189;">
+      <div class="card-body">
+        <i class="fa-solid fa-quote-left" style="color: #ff7797; font-size: 2em; padding-bottom: 0.5em;"></i>
+        <p class="card-text" style="font-family:'Poppins', sans-serif; font-size: 1em; font-weight: 400;">This donut is pure perfection. Soft, sweet, and just melts in your mouth! Can't wait to come back!</p>
+        <h5 class="card-subtitle mb-2 text-body-secondary" style="font-family:'Poppins', sans-serif; font-size: 0.8em; font-weight: bold;">- Hannah K.</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="carrusel-container" style="background-color: #fbe5e9; padding: 3em 0 6em 0;display: flex; justify-content: center;">
+  <div class="carrusel-donuts" style="width: 33%; background-color: #F5D1DB">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="media/photo/carrusel/carrusel1.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="media/photo/carrusel/carrusel2.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<footer id="footer">
+        <!-- línea horzontal -->
+        <div class="line"></div>
+
+        <div class="text-footer">
+          <div class="column">
+            <h3 class="bold">Company</h3>
+          </div>
+          <div class="column">
+            <h3>Order</h3>
+          </div>
+          <div class="column">
+            <h3>Our story</h3>
+          </div>
+          <div class="column">
+            <h3>Rewards</h3>
+          </div>
+          <div class="column">
+            <h3>Nutrition & Allergy</h3>
+          </div>
+          <div class="column">
+            <h3>Support</h3>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <div class="column-sm">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="column-sm">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="column-sm">
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+          <div class="column-sm">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div class="column-sm">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+          <div class="column-sm">
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+        </div>
+
+        <div class="privacy-policy">
+          <div class="row-policy" align="center">
+            <img src="media/photo/LOGO-DRIZZLE.png" class="logo-img" width="400em" height="auto">
+          </div>
+          <div class="row-policy">
+            <h3 class="bold">© 2024 all rights reserved</h3>
+          </div>
+          <div class="row-policy">
+            <h3>Privacy policy | Terms and Conditions | Non-edible Cookie Preferences</h3>
+          </div>
+        </div>
+        
+    </footer>
+
+
+
+     <!-- JAVASCRIPT BOOTSTRAP -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+     <!-- JAVASCRIPT -->
+      <script src="js/script.js"></script>
+</body>
+</html>

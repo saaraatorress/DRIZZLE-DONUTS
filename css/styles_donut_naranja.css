@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D6A7B0;
+}
+
+/* MENÚ */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9E7B85; /* Color del menú */
+    padding: 1em 3em; /* Ajusta el padding para espacio arriba y abajo */
+
+}
+
+.navbar-brand {
+    color: #D6A7B0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    font-family: 'Lilita One', sans-serif;
+    padding-left: 1.5em;
+    font-size: 18px
+}
+
+.navbar-nav.me-auto {
+    margin-left: 20em;
+}
+
+.navbar-nav.me-auto .nav-item:not(:last-child) {
+    margin-right: 6em; /* Aumenta este valor para controlar el espacio entre los enlaces */
+}
+
+/* Cambia el color de los enlaces al pasar el ratón */
+.navbar .nav-link:hover {
+  color: #F5D1DB !important; /* Cambia a tu color preferido */
+  transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+/* Cambia el color del enlace activo también */
+.navbar .nav-link.active:hover {
+  color: #0000008C !important; /* Cambia a tu color preferido */
+}
+
+/* Estilo del menú desplegable */
+.navbar .dropdown-menu {
+  background-color: #F4ACB7; /* Color de fondo */
+  border: 2px solid #9D8189;
+  border-radius: 8px; /* Borde redondeado */
+  box-shadow: 1em 1em 1em #4e3f43; /* Sombra */
+}
+
+/* Estilo de cada elemento del menú */
+.navbar .dropdown-menu .dropdown-item {
+  color: #0000008C; /* Color de texto */
+  padding: 0.5em 1.5em; /* Espaciado interno */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición para el hover */
+}
+
+/* Hover para los elementos del menú */
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #FF85A2; /* Color de fondo al pasar el ratón */
+  color: #fff; /* Color del texto al pasar el ratón */
+}
+
+/* ACORDEÓN */
+
+/* Estilo para el botón de encabezado del acordeón */
+.accordion-button {
+    color: #EF7F98 !important; /* Color del texto */
+    background-color: #FFCAD4 !important; /* Color de fondo */
+    border: 1px solid #EF7F98 !important; /* Color del borde */
+    font-family: 'Lilita One', sans-serif !important;
+    font-size: 0.7em !important;
+}
+
+/* Quita el color azul al estar en foco */
+.accordion-button:focus {
+    box-shadow: none !important; /* Elimina el contorno azul */
+    color: #EF7F98 !important; /* Mantiene el color del texto */
+    background-color: #FFCAD4 !important; /* Color de fondo cuando está en foco */
+    border-color: #EF7F98 !important; /* Color del borde en foco */
+}
+
+/* Color de la flecha (icono de despliegue) */
+.accordion-button::after {
+    filter: hue-rotate(280deg) !important; /* Cambia el color del icono */
+    color: #EF7F98;
+}
+
+/* Personalización del estado activo (cuando está expandido) */
+.accordion-button:not(.collapsed) {
+    color: #EF7F98 !important; /* Color de texto cuando está expandido */
+    background-color: #FFC1D1 !important; /* Color de fondo cuando está expandido */
+    border-color: #EF7F98 !important; /* Borde cuando está expandido */
+}
+
+
+
+/* FOOTER */
+.line {
+    height: 2px;
+    background-color: #9D8189;
+    width: 100%;
+}
+
+.text-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 40px;
+    padding-top: 90px;
+    margin-right: 27%;
+    margin-left: 27%;
+}
+
+.column {
+    padding: 10px;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3.bold{
+    font-weight: bold;
+}
+
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-right: 40%;
+    margin-left: 40%;
+    padding-bottom: 70px;
+}
+
+.column-sm{
+    text-align: center;
+}
+
+
+/* PRODUCTO */
+#product{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 3em;
+    background-color: #EF7F98;
+
+}
+.column-donut-foto{
+    width: 33%;
+    height: auto;
+    margin-left: 4em;
+    margin-right: 10em;
+}
+.column-donut-foto > img{
+    width: 120%;
+    height: auto;
+}
+
+.row-donut-title{
+    padding-top: 2em;
+}
+
+.row-donut-title > h1{
+    font-family: 'Lilita One', sans-serif;
+    font-size: 4.2em ;
+    margin-bottom: 0.4em;
+}
+
+.column-donut{
+    width: 37%;
+}
+.row-donut > h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 3em;
+}
+
+.btn-order {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EF7F98;
+    border: 2px solid #000;
+    border-radius: 25px; 
+    padding: 10px 40px 10px 40px;
+    cursor: pointer;
+}
+/* hover */
+.btn-order:hover {
+    background-color: #eaafbc;
+}
+
+.row-donut > img{
+    width: 7%;
+    margin-left: 3em;
+    padding-bottom: 0.4em;
+    cursor: pointer;
+}
+
+.stars {
+    color: white;
+    padding-top: 3em;
+}
+
+.stars > i{
+    font-size: 2em;
+}
+
+.ondas > img{
+    width: 100%;
+    height: auto;
+}
+.ondas{
+    background-color: #FBE5E9;
+}
+
+
+/* INGREDIENTES Y ALERGIAS */
+.button.accordion-button.collapsed{
+color: #EF7F98;
+background-color: #FFCAD4;
+}
+
+
+
+/* REVIEWS */
+#reviews{
+    background-color: #FBE5E9;
+}
+.section-title {
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #9D8189;
+    font-family: 'Lilita One', sans-serif;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    margin: 0 0.5em 5em 0.5em;
+    box-shadow: 1em 1em 1em #9D8189;
+    border-radius: 4em;
+}
+
+.card > i{
+    font-size: 3em;
+}
+
+
+
+
+/* FOOTER  */
+.line {
+    height: 2px;
+    background-color: #9D8189;
+    width: 100%;
+}
+
+.text-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 40px;
+    padding-top: 90px;
+    margin-right: 27%;
+    margin-left: 27%;
+}
+
+.column {
+    padding: 10px;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 0.7em !important;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3.bold{
+    font-weight: bold !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-media{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-right: 40%;
+    margin-left: 40%;
+    padding-bottom: 70px;
+
+}
+
+.column-sm{
+    text-align: center;
+}
+
+.privacy-policy{
+    background-color: #DDB280 !important;
+    padding-bottom: 3em;
+}
+
+footer{
+    background-color: #FBE5E9 ;
+}
