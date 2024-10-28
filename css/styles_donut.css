@@ -69,11 +69,37 @@ body {
   color: #fff; /* Color del texto al pasar el ratón */
 }
 
-/* Separador del menú */
-.navbar .dropdown-menu .dropdown-divider {
-  border-color: #FFB6C1; /* Color del separador */
+/* ACORDEÓN */
+
+/* Estilo para el botón de encabezado del acordeón */
+.accordion-button {
+    color: #EF7F98 !important; /* Color del texto */
+    background-color: #FFCAD4 !important; /* Color de fondo */
+    border: 1px solid #EF7F98 !important; /* Color del borde */
+    font-family: 'Lilita One', sans-serif !important;
+    font-size: 0.7em !important;
 }
 
+/* Quita el color azul al estar en foco */
+.accordion-button:focus {
+    box-shadow: none !important; /* Elimina el contorno azul */
+    color: #EF7F98 !important; /* Mantiene el color del texto */
+    background-color: #FFCAD4 !important; /* Color de fondo cuando está en foco */
+    border-color: #EF7F98 !important; /* Color del borde en foco */
+}
+
+/* Color de la flecha (icono de despliegue) */
+.accordion-button::after {
+    filter: hue-rotate(280deg) !important; /* Cambia el color del icono */
+    color: #EF7F98;
+}
+
+/* Personalización del estado activo (cuando está expandido) */
+.accordion-button:not(.collapsed) {
+    color: #EF7F98 !important; /* Color de texto cuando está expandido */
+    background-color: #FFC1D1 !important; /* Color de fondo cuando está expandido */
+    border-color: #EF7F98 !important; /* Borde cuando está expandido */
+}
 
 
 
