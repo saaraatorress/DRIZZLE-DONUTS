@@ -208,8 +208,6 @@ background-color: #FFCAD4;
 
 
 
-
-
 /* REVIEWS */
 #reviews{
     background-color: #FBE5E9;
@@ -229,12 +227,17 @@ background-color: #FFCAD4;
 }
 
 .card{
-    margin: 0 0.5em 4em 0.5em;
+    margin: 0 0.5em 5em 0.5em;
+    box-shadow: 1em 1em 1em #9D8189;
+    border-radius: 4em;
 }
 
 .card > i{
     font-size: 3em;
 }
+
+
+
 
 /* FOOTER  */
 .line {
