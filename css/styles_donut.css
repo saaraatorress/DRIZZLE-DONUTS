@@ -91,6 +91,21 @@ body {
     color: #EF7F98 !important; /* Asegúrate de que se aplique también cuando está expandido */
 }
 
+/* CARRUSEL */
+
+.swiper-container {
+    background-color:#FBE5E9;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .swiper-slide img {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+  }
+
 /* sponsor */
 
 /* Contenedor principal */
