@@ -93,18 +93,36 @@ body {
 
 /* CARRUSEL */
 
+#carrusel{
+    background-color: #FBE5E9;
+}
 .swiper-container {
-    background-color:#FBE5E9;
+    width: 100vw;
+    height: 65vh;
+}
+
+.swiper-wrapper {
+    display: flex;
     width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .swiper-slide img {
-    width: 80%;
     height: 100%;
-    object-fit: cover;
-  }
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+
+
+
 
 /* sponsor */
 
@@ -302,6 +320,31 @@ background-color: #FFCAD4;
     font-size: 3em;
 }
 
+/* CARRUSEL */
+.swiper-container {
+    width: 80vw; 
+    height: 60vh;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.swiper-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
 
 
 

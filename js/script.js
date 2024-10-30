@@ -18,7 +18,6 @@ function changeImage() {
 
   const swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,          // Muestra 3 imágenes a la vez
-    spaceBetween: 20,          // Espacio entre las imágenes
     loop: true,                // Permite el bucle infinito
     autoplay: {
       delay: 3000,             // Cambia cada 3 segundos
