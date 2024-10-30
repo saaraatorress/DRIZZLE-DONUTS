@@ -248,7 +248,7 @@ h3.bold{
 
 .btn-order {
     font-family: 'Poppins', sans-serif;
-    background-color: #EF7F98;
+    background-color: #DC7101;
     border: 2px solid #000;
     border-radius: 25px; 
     padding: 10px 40px 10px 40px;
@@ -256,7 +256,7 @@ h3.bold{
 }
 /* hover */
 .btn-order:hover {
-    background-color: #eaafbc;
+    background-color: #dea666;
 }
 
 .row-donut > img{
