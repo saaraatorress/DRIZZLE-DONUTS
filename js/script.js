@@ -16,26 +16,29 @@ function changeImage() {
 }
 
 
-  const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,          // Muestra 3 imágenes a la vez
-    loop: true,                // Permite el bucle infinito
-    autoplay: {
-      delay: 3000,             // Cambia cada 3 segundos
-      disableOnInteraction: false, // Continúa automáticamente después de la interacción
+
+
+// carrusel imagenes donut 
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 4,        
+  loop: true,             
+  autoplay: {
+    delay: 2000,       
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: { 
+    640: {
+      slidesPerView: 1,
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+    768: {
+      slidesPerView: 2,
     },
-    breakpoints: {             // Adaptación para diferentes tamaños de pantalla
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
+    1024: {
+      slidesPerView: 3,
     },
-  });
+  },
+});
