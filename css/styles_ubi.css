@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #D6A7B0;
+}
+
+/* MENÚ */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9E7B85; /* Color del menú */
+    padding: 1em 3em; /* Ajusta el padding para espacio arriba y abajo */
+
+}
+
+.navbar-brand {
+    color: #D6A7B0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    font-family: 'Lilita One', sans-serif;
+    padding-left: 1.5em;
+    font-size: 18px
+}
+
+.navbar-nav.me-auto {
+    margin-left: 20em;
+}
+
+.navbar-nav.me-auto .nav-item:not(:last-child) {
+    margin-right: 6em; /* Aumenta este valor para controlar el espacio entre los enlaces */
+}
+
+/* Cambia el color de los enlaces al pasar el ratón */
+.navbar .nav-link:hover {
+  color: #F5D1DB !important; /* Cambia a tu color preferido */
+  transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+/* Cambia el color del enlace activo también */
+.navbar .nav-link.active:hover {
+  color: #0000008C !important; /* Cambia a tu color preferido */
+}
+
+/* Estilo del menú desplegable */
+.navbar .dropdown-menu {
+  background-color: #F4ACB7; /* Color de fondo */
+  border: 2px solid #9D8189;
+  border-radius: 8px; /* Borde redondeado */
+  box-shadow: 1em 1em 1em #4e3f43; /* Sombra */
+}
+
+/* Estilo de cada elemento del menú */
+.navbar .dropdown-menu .dropdown-item {
+  color: #0000008C; /* Color de texto */
+  padding: 0.5em 1.5em; /* Espaciado interno */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición para el hover */
+}
+
+/* Hover para los elementos del menú */
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #FF85A2; /* Color de fondo al pasar el ratón */
+  color: #fff; /* Color del texto al pasar el ratón */
+}
+
+/* Separador del menú */
+.navbar .dropdown-menu .dropdown-divider {
+  border-color: #FFB6C1; /* Color del separador */
+}
+
+/* sponsor */
+
+/* Contenedor principal */
+.sponsor-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #9D8189; /* Fondo opcional */
+  padding: 1em 0;
+}
+
+/* Pista de elementos con animación */
+.sponsor-track {
+  display: inline-flex;
+  animation: scroll 60s linear infinite;
+  padding-bottom: 1em;
+}
+
+/* Elementos individuales de texto */
+.sponsor-item {
+  display: inline-block;
+  margin: 0 2em; /* Espacio entre textos */
+  font-size: 1.2em;
+  color: #FBE5E9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+  font-family: 'Lilita One', sans-serif;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* Animación continua */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); } /* Se desplaza hasta la mitad del contenedor duplicado */
+}
+
+
+/* FOOTER  */
+.line {
+  height: 2px;
+  background-color: #9D8189;
+  width: 100%;
+}
+
+.text-footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
+  gap: 10px;
+  padding: 40px;
+  padding-top: 90px;
+  margin-right: 27%;
+  margin-left: 27%;
+}
+
+.column {
+  padding: 10px;
+}
+
+h3{
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 0.7em !important;
+  font-weight: 400;
+  text-align: center;
+}
+
+h3.bold{
+  font-weight: bold !important;
+  font-family: 'Poppins', sans-serif;
+}
+
+.social-media{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-right: 40%;
+  margin-left: 40%;
+  padding-bottom: 70px;
+
+}
+
+.column-sm{
+  text-align: center;
+}
+
+.privacy-policy{
+  background-color: #DDB280 !important;
+  padding-bottom: 3em;
+}
+
+footer{
+  background-color: #FBE5E9 ;
+}
+
+
+
+
