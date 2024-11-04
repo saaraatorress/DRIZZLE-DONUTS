@@ -86,7 +86,7 @@ body, html {
 /* Ajustar la sección de donuts */
 .donut-section {
     display: flex;
-    height: 40EM;
+    height: 40em;
     justify-content: space-between;
     background-color: #fbe6e8;
 }

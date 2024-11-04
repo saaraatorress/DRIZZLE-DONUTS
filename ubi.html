@@ -49,14 +49,14 @@
              }
      
              .info-box {
-                 font-family: 'Poppins', sans-serif;
-                 font-size: 14px;
-                 padding: 6px 8px;
-                 color: #000000;
-                 background-color: #F4ACB7; /* Fondo blanco para popups */
-                 border-radius: 0.2em;
-                 border: O.5em solid #9D8189;
-                 box-shadow: 1em 1em 1em #9D8189;
+              font-family: 'Poppins', sans-serif;
+              font-size: 14px;
+              padding: 1em 0.5em;
+              color: #000000;
+              background-color: #F4ACB7;
+              border-radius: 0.2em;
+              border: O .5em solid #9D8189;
+              box-shadow: .5em 0.5em 0.5em #9D8189;
                  
              }
 
@@ -64,7 +64,7 @@
                 background: #fbe5e9;
                 color: #333;
                 box-shadow: 0 3px 14px rgb(157 129 137);
-                padding: 2em;
+                padding: 0.5em;
                 
             }
      
@@ -135,17 +135,22 @@
 
     // Datos de ejemplo para las ubicaciones de tiendas
     const tiendas = [
-        { nombre: "Donuts NYC", lat: 40.7128, lng: -74.0060 },
-        { nombre: "Donuts Tokyo", lat: 35.6895, lng: 139.6917 },
-        { nombre: "Donuts Paris", lat: 48.8566, lng: 2.3522 },
-        { nombre: "Donuts Mexico City", lat: 19.4326, lng: -99.1332 },
-        { nombre: "Donuts Sydney", lat: -33.8688, lng: 151.2093 }
+{ nombre: "DRIZZLE DONUTS Barcelona", lat: 41.3851, lng: 2.1734 },
+{ nombre: "DRIZZLE DONUTS Madrid", lat: 40.4168, lng: -3.7038 },
+{ nombre: "DRIZZLE DONUTS New York", lat: 40.7128, lng: -74.0060 },
+{ nombre: "DRIZZLE DONUTS Paris", lat: 48.8566, lng: 2.3522 },
+{ nombre: "DRIZZLE DONUTS London", lat: 51.5074, lng: -0.1278 },
+{ nombre: "DRIZZLE DONUTS Buenos Aires", lat: -34.6037, lng: -58.3816 },
+{ nombre: "DRIZZLE DONUTS Miami", lat: 25.7617, lng: -80.1918 },
+{ nombre: "DRIZZLE DONUTS Tokyo", lat: 35.6895, lng: 139.6917 },
+{ nombre: "DRIZZLE DONUTS Berlin", lat: 52.5200, lng: 13.4050 },
+{ nombre: "DRIZZLE DONUTS Moscow", lat: 55.7558, lng: 37.6173 }
     ];
 
     // Añade marcadores en el mapa para cada tienda
     tiendas.forEach(tienda => {
         const marker = L.marker([tienda.lat, tienda.lng]).addTo(map);
-        marker.bindPopup(`<div class="info-box"><strong>${tienda.nombre}</strong><br>¡Encuentra deliciosos donuts aquí!</div>`);
+        marker.bindPopup(`<div class="info-box"><strong>${tienda.nombre}</strong><br>Find our DRIZZLE DONUTS shop!</div>`);
         
         // Cambia la vista del mapa al hacer clic en el marcador
         marker.on('click', function() {
