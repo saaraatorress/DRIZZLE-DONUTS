@@ -100,7 +100,7 @@ body {
     white-space: nowrap;
     width: 100%;
     background-color: #9D8189; /* Fondo opcional */
-    padding: 1em 0;
+    padding-top: 1em;
   }
   
   /* Pista de elementos con animación */
@@ -338,9 +338,8 @@ footer{
 }
 
 
-
-/* RESPONSIVE 
-@media (min-width: 1366px) and (max-width: 2560px) {
+/* RESPONSIVE PANTALLA GRANDE */
+@media (min-width: 1600px) and (max-width: 2560px) {
     .column-donut-foto > img {
         width: 91%;
         height: auto;
@@ -355,7 +354,13 @@ footer{
     .cards{
         gap: 4%;
     }
-}  */
+} 
+
+
+
+
+
+
 
 /* RESPONSIVE IPHONE 12 PRO*/
 @media (max-width: 767px)  {
