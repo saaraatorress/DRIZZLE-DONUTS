@@ -243,5 +243,112 @@ footer{
 }
 
 
-/* RESPONISVE */
-/* pantalla grande */
+/* RESPONSIVE IPHONE 12 PRO*/
+@media (max-width: 767px)  {
+    
+    .section-title {
+        font-size: 2.5em;
+        margin-bottom: 1.5em;
+        color: #9D8189;
+        font-family: 'Lilita One', sans-serif;
+    }
+    
+
+    .navbar-nav.me-auto {
+        margin-left: 2em !important;
+    }
+
+    .navbar .dropdown-menu {
+        background-color: #F4ACB7;
+        border: 2px solid #9D8189;
+        border-radius: 8px;
+        box-shadow: .5em 0.5em 0.5em #4e3f43;
+        width: 10%;
+    }
+
+    .text-footer {
+        display: flex !important;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
+        flex-wrap: wrap;
+        padding-top: 2em !important;
+        justify-content: center;
+    }
+    .social-media {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2em;
+        margin-right: 40%;
+        margin-left: 40%;
+        padding-bottom: 70px;
+        justify-content: center;
+    }
+    
+    img, svg {
+        vertical-align: middle;
+        width: 80%;
+    }
+    .row-policy{
+        padding-top: 1em;
+    }
+    
+    .button-container {
+        display: flex;
+        gap: 4em;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .custom-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2em 3em;
+        width: 100%;
+        height: auto;
+        background-color: #F4ACB7;
+        box-shadow: 1em 1em 1em #9D8189;
+        border-radius: 3em;
+        font-size: 1em;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        border-bottom: 1em;
+        border: 4px solid #9D8189;
+    }
+}  
+
+/* RESPONSIVE IPAD MINI*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .navbar-nav.me-auto {
+        margin-left: 4em !important;
+    }
+
+    .navbar .dropdown-menu {
+        background-color: #F4ACB7;
+        border: 2px solid #9D8189;
+        border-radius: 8px;
+        box-shadow: .5em 0.5em 0.5em #4e3f43;
+        width: 10%;
+    }
+
+    .text-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
+        gap: 10px;
+        padding: 40px;
+        padding-top: 90px;
+        margin-right: 27%;
+        margin-left: 27%;
+        justify-content: center;
+    }
+
+    .social-media {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 2em;
+        margin-right: 40%;
+        margin-left: 40%;
+        padding-bottom: 70px;
+        justify-content: center;
+    }
+}
