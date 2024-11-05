@@ -1364,6 +1364,7 @@ footer{
   .info-section {
     padding-bottom: 7em;
   }
+}
 
   /* RESPONSIVE IPHONE 12 PRO*/
 @media (max-width: 767px)  {
@@ -1450,5 +1451,4 @@ footer{
       padding-bottom: 70px;
       justify-content: center;
   }
-}
 }
