@@ -1451,4 +1451,33 @@ footer{
       padding-bottom: 70px;
       justify-content: center;
   }
+  .donut-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: #f8bfc9;
+    padding-bottom: 5em;
+}
+
+.donut-section {
+  display: flex;
+  height: 30em;
+  justify-content: space-between;
+  background-color: #fbe6e8;
+}
+
+.donut-image {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  background-color: #fbe6e8;
+}
+
+.donut-image img {
+  max-width: 100%;
+  height: auto;
+}
+
 }
