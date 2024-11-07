@@ -251,6 +251,7 @@ background-color: #FFCAD4;
     background-color: #FBE5E9;
     padding-top: 4em;
     padding-bottom: 4em;
+    overflow: hidden;
 }
 
 .swiper-container {

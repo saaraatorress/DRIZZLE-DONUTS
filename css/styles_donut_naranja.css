@@ -249,6 +249,7 @@ background-color: #FFCAD4;
 #carrusel {
     background-color: #FBE5E9;
     padding-top: 4em;
+    overflow: hidden;
     
 }
 
@@ -358,7 +359,7 @@ footer{
 } 
 
 
-/* RESPONSIVE IPHONE 12 PRO*/
+/* RESPONSIVE MÓVIL*/
 @media (max-width: 767px)  {
     
     #product {
@@ -468,6 +469,7 @@ footer{
         grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
         flex-wrap: wrap;
         padding-top: 2em !important;
+        justify-content: center;
     }
 
     .social-media {
@@ -489,7 +491,7 @@ footer{
     }
 }  
 
-/* RESPONSIVE IPAD MINI*/
+/* RESPONSIVE TABLET*/
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .navbar-nav.me-auto {
