@@ -223,6 +223,18 @@ body, html {
     margin-left: 5em;
 }
 
+@media (max-width: 767px)  {
+  .hover-content {
+    display: none; 
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hover-content {
+    display: none; 
+}
+}
+
 .info-content:hover .hover-content {
     opacity: 1;
     visibility: visible;
@@ -231,6 +243,19 @@ body, html {
 /* Ocultar el texto al hacer hover */
 .info-content:hover .info-description {
     opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+@media (max-width: 767px)  {
+  .info-description {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+   .info-description {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
 }
 
 /* Botones en hover */
@@ -333,6 +358,17 @@ body, html {
     margin-right: 5em;
 }
 
+@media (max-width: 767px)  {
+  .hover-content2 {
+    display: none; 
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hover-content2 {
+    display: none; 
+}
+}
+
 .info-content2:hover .hover-content2 {
     opacity: 1;
     visibility: visible;
@@ -341,6 +377,19 @@ body, html {
 /* Ocultar el texto al hacer hover */
 .info-content2:hover .info-description2 {
     opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+@media (max-width: 767px)  {
+  .info-description2 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info-description2 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
 }
 
 /* Botones en hover */
@@ -444,6 +493,16 @@ body, html {
     margin-top: 5.5em;
     margin-left: 5em;
 }
+@media (max-width: 767px)  {
+  .hover-content3 {
+    display: none; 
+}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hover-content3 {
+    display: none; 
+}
+}
 
 .info-content3:hover .hover-content3 {
     opacity: 1;
@@ -453,6 +512,19 @@ body, html {
 /* Ocultar el texto al hacer hover */
 .info-content3:hover .info-description3 {
     opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+@media (max-width: 767px)  {
+  .info-description3 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info-description3 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
 }
 
 /* Botones en hover */
@@ -554,6 +626,17 @@ body, html {
     margin-top: 5.5em;
     margin-right: 5em;
 }
+@media (max-width: 767px)  {
+  .hover-content4 {
+    display: none; 
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hover-content4 {
+    display: none; 
+}
+}
 
 .info-content4:hover .hover-content4 {
     opacity: 1;
@@ -563,6 +646,20 @@ body, html {
 /* Ocultar el texto al hacer hover */
 .info-content4:hover .info-description4 {
     opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+@media (max-width: 767px)  {
+  .info-description4 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info-description4 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
 }
 
 /* Botones en hover */
@@ -667,6 +764,19 @@ body, html {
     margin-left: 5em;
 }
 
+@media (max-width: 767px)  {
+  .hover-content5 {
+    display: none; 
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hover-content5 {
+    display: none; 
+}
+}
+
+
 .info-content5:hover .hover-content5 {
     opacity: 1;
     visibility: visible;
@@ -675,6 +785,20 @@ body, html {
 /* Ocultar el texto al hacer hover */
 .info-content5:hover .info-description5 {
     opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+@media (max-width: 767px)  {
+  .info-description5 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info-description5 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
 }
 
 /* Botones en hover */
@@ -777,6 +901,19 @@ body, html {
     margin-right: 5em;
 }
 
+@media (max-width: 767px)  {
+  .hover-content6 {
+    display: none; 
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hover-content6 {
+    display: none; 
+}
+}
+
+
 .info-content6:hover .hover-content6 {
     opacity: 1;
     visibility: visible;
@@ -785,6 +922,20 @@ body, html {
 /* Ocultar el texto al hacer hover */
 .info-content6:hover .info-description6 {
     opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+@media (max-width: 767px)  {
+  .info-description6 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info-description6 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
 }
 
 /* Botones en hover */
@@ -889,6 +1040,18 @@ body, html {
     margin-left: 5em;
 }
 
+@media (max-width: 767px)  {
+  .hover-content7 {
+    display: none; 
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hover-content7 {
+    display: none; 
+}
+}
+
 .info-content7:hover .hover-content7 {
     opacity: 1;
     visibility: visible;
@@ -898,6 +1061,21 @@ body, html {
 .info-content7:hover .info-description7 {
     opacity: 0; /* O bien visibility: hidden; para que desaparezca */
 }
+
+@media (max-width: 767px)  {
+  .info-description7 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info-description7 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
+}
+
 
 /* Botones en hover */
 .buttons7 {
@@ -999,6 +1177,18 @@ body, html {
     margin-right: 5em;
 }
 
+@media (max-width: 767px)  {
+  .hover-content8 {
+    display: none; 
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hover-content8 {
+    display: none; 
+}
+}
+
 .info-content8:hover .hover-content8 {
     opacity: 1;
     visibility: visible;
@@ -1007,6 +1197,20 @@ body, html {
 /* Ocultar el texto al hacer hover */
 .info-content8:hover .info-description8 {
     opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+@media (max-width: 767px)  {
+  .info-description8 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info-description8 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
 }
 
 /* Botones en hover */
@@ -1111,6 +1315,18 @@ body, html {
     margin-left: 5em;
 }
 
+@media (max-width: 767px)  {
+  .hover-content9 {
+    display: none; 
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hover-content9 {
+    display: none; 
+}
+}
+
 .info-content9:hover .hover-content9 {
     opacity: 1;
     visibility: visible;
@@ -1119,6 +1335,20 @@ body, html {
 /* Ocultar el texto al hacer hover */
 .info-content9:hover .info-description9 {
     opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+@media (max-width: 767px)  {
+  .info-description9 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info-description9 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
 }
 
 /* Botones en hover */
@@ -1221,6 +1451,18 @@ body, html {
     margin-right: 5em;
 }
 
+@media (max-width: 767px)  {
+  .hover-content10 {
+    display: none; 
+}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hover-content10 {
+    display: none; 
+}
+}
+
 .info-content10:hover .hover-content10 {
     opacity: 1;
     visibility: visible;
@@ -1229,6 +1471,20 @@ body, html {
 /* Ocultar el texto al hacer hover */
 .info-content10:hover .info-description10 {
     opacity: 0; /* O bien visibility: hidden; para que desaparezca */
+}
+
+@media (max-width: 767px)  {
+  .info-description10 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info-description10 {
+    opacity: 1 !important; /* Asegura que el texto siempre sea visible */
+    visibility: visible;
+  }
 }
 
 /* Botones en hover */
@@ -1366,7 +1622,7 @@ footer{
   }
 }
 
-  /* RESPONSIVE IPHONE 12 PRO*/
+  /* RESPONSIVE MOVIL*/
 @media (max-width: 767px)  {
     
   .section-title {
@@ -1413,10 +1669,174 @@ footer{
   .row-policy{
       padding-top: 1em;
   }
+
+  .donut-section {
+    display: flex;
+    height: 40em;
+    justify-content: center;
+    background-color: #fbe6e8;
+    flex-wrap: wrap;
+}
+.donut-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f8bfc9;
+}
+.donut-image {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+  background-color: #fbe6e8;
+}
+.info-section {
+  position: relative;
+  padding: 1em 2em 5%;
+  text-align: center;
+  background-color: #fbe6e8;
+}
+.section-title {
+  font-size: 2.5em;
+  color: #9D8189;
+  font-family: 'Lilita One', sans-serif;
+}
+
+.info-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.info-heading {
+  font-size: 2em;
+}
+
+.info-description {
+  font-size: 0.8em;
+}
+
+.info-heading2 {
+  font-size: 2em;
+}
+
+.info-description2 {
+  font-size: 0.8em;
+}
+
+.info-heading3 {
+  font-size: 2em;
+}
+
+.info-description3 {
+  font-size: 0.8em;
+}
+
+.info-heading4 {
+  font-size: 2em;
+}
+
+.info-description4 {
+  font-size: 0.8em;
+}
+
+.info-heading5 {
+  font-size: 2em;
+}
+
+.info-description5 {
+  font-size: 0.8em;
+}
+
+.info-heading6 {
+  font-size: 2em;
+}
+
+.info-description6 {
+  font-size: 0.8em;
+}
+
+.info-heading7 {
+  font-size: 2em;
+}
+
+.info-description7 {
+  font-size: 0.8em;
+}
+
+.info-heading8 {
+  font-size: 2em;
+}
+
+.info-description8 {
+  font-size: 0.8em;
+}
+
+.info-heading9 {
+  font-size: 2em;
+}
+
+.info-description9 {
+  font-size: 0.8em;
+}
+
+.info-heading10 {
+  font-size: 2em;
+}
+
+.info-description10 {
+  font-size: 0.8em;
+}
+
+.info-image {
+  width: 45%;
+}
+
+.info-image2 {
+  width: 45%;
+}
+
+.info-image3 {
+  width: 45%;
+}
+
+.info-image4 {
+  width: 50%;
+}
+
+.info-image5 {
+  width: 45%;
+}
+
+.info-image6 {
+  width: 45%;
+}
+
+.info-image7 {
+  width: 55%;
+}
+
+.info-image8 {
+  width: 55%;
+}
+
+.info-image9 {
+  width: 50%;
+}
+
+.info-image10 {
+  width: 45%;
+}
   
 }  
 
-/* RESPONSIVE IPAD MINI*/
+/* RESPONSIVE TABLET*/
 @media (min-width: 768px) and (max-width: 1024px) {
 
   .navbar-nav.me-auto {
